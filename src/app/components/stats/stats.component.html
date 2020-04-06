@@ -1,0 +1,59 @@
+<section>
+    <h3>Overall Statistics</h3>
+    <ul>
+        <li>Birdies: {{birdies}}</li>
+        <li>Pars: {{pars}}</li>
+        <li>Bogeys: {{bogeys}}</li>
+        <li>Double+: {{doubles}}</li>
+    </ul>
+</section>
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="day">
+      <th mat-header-cell *matHeaderCellDef>Day</th>
+      <td mat-cell *matCellDef="let element"> {{element.day}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="hole1">
+      <th mat-header-cell *matHeaderCellDef>Hole 1</th>
+      <td mat-cell *matCellDef="let element"> {{element.hole1}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="hole2">
+      <th mat-header-cell *matHeaderCellDef>Hole 2</th>
+      <td mat-cell *matCellDef="let element"> {{element.hole2}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="hole3">
+      <th mat-header-cell *matHeaderCellDef>Hole 3</th>
+      <td mat-cell *matCellDef="let element"> {{element.hole3}} </td>
+    </ng-container>
+
+     <!-- Symbol Column -->
+     <ng-container matColumnDef="hole4">
+        <th mat-header-cell *matHeaderCellDef>Hole 4</th>
+        <td mat-cell *matCellDef="let element"> {{element.hole4}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="hole5">
+        <th mat-header-cell *matHeaderCellDef>Hole 5</th>
+        <td mat-cell *matCellDef="let element"> {{element.hole5}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="aggregate">
+        <th mat-header-cell *matHeaderCellDef>To Par</th>
+        <td mat-cell *matCellDef="let element"> {{aggregateDay(element.day)}} </td>
+      </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

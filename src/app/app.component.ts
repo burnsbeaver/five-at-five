@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'five-at-five';
+
+  get isMobile() {
+    return window.innerWidth > 600
+  }
 }
