@@ -44,5 +44,28 @@ export const stats = [
             par: 3,
             score: 3
         }
+    },
+    {
+        day: 'April 7th',
+        hole1: {
+            par: 4,
+            score: 4
+        },
+        hole2: {
+            par: 4,
+            score: 4
+        },
+        hole3: {
+            par: 3,
+            score: 4
+        },
+        hole4: {
+            par: 5,
+            score: 7
+        },
+        hole5: {
+            par: 4,
+            score: 4
+        }
     }
 ]
