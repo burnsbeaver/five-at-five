@@ -56,6 +56,10 @@ export class StatsComponent implements OnInit {
 
     let prefix = count > 0 ? '+' : '-'
 
+    if (count = 0) {
+      return 'EVEN!'
+    }
+
     return prefix + count;
 
   }
