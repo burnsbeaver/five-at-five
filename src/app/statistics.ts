@@ -90,5 +90,28 @@ export const stats = [
           par: 5,
           score: 5
         }
+  },
+  {
+      day: 'April 9th',
+      hole1: {
+        par: 3,
+        score: 3
+      },
+      hole2: {
+        par: 5,
+        score: 7
+      },
+      hole3: {
+        par: 3,
+        score: 3
+      },
+      hole4: {
+        par: 4,
+        score: 5
+      },
+      hole5: {
+        par: 5,
+        score: 6
+      }
   }
 ];

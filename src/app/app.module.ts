@@ -14,6 +14,7 @@ import { PledgesComponent } from './components/pledges/pledges.component';
 import {MatTableModule} from '@angular/material/table';
 import {CdkTableModule} from '@angular/cdk/table';
 import {MatMenuModule} from '@angular/material/menu';
+import { ComponentNameComponent } from './component-name/component-name.component';
 
 
 
@@ -24,7 +25,8 @@ import {MatMenuModule} from '@angular/material/menu';
     AppComponent,
     AboutComponent,
     StatsComponent,
-    PledgesComponent
+    PledgesComponent,
+    ComponentNameComponent
   ],
   imports: [
     BrowserModule,
